@@ -2,7 +2,7 @@
   "interactionModel": {
     "languageModel": {
       "invocationName": "high low game",
-      "intents": [
+        "intents": [
         {
           "name": "AMAZON.CancelIntent",
           "samples": []
@@ -36,8 +36,8 @@
             "could be {number}"
           ],
           "slots": [{
-            "name": "number", "type": "AMAZON.NUMBER"
-          }]
+              "name": "number", "type": "AMAZON.NUMBER"
+              }]
         }
       ]
     }
