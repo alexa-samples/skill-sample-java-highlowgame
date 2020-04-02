@@ -10,7 +10,7 @@
           "src": "./lambda"
         },
         "EU": {
-          "src": "./labmda"
+          "src": "./lambda"
         }
       },
       "skillInfrastructure": {
