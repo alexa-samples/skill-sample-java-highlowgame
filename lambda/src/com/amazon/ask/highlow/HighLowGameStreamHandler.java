@@ -28,8 +28,8 @@ public class HighLowGameStreamHandler extends SkillStreamHandler {
                     new FallbackIntentHandler(),
                     new UnsupportedRequestHandler())
                 .addExceptionHandler(new ExceptionHandler())
-                .withTableName("HighLowGame")
-                .withAutoCreateTable(true)
+                .withTableName(System.getenv("DYNAMODB_TABLE_NAME"))
+                .withAutoCreateTable(false)
                 // Add your skill id below
                 //.withSkillId("")
                 .build();

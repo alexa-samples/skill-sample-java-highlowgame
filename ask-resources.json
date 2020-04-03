@@ -1,29 +1,27 @@
 {
-    "askcliResourcesVersion": "2019-08-23",
-    "profiles": {
-      "default": {
-        "skillId": "",
-        "skillMetadata": {
-          "src": "./skill-package",
-          "lastDeployHash": ""
+  "askcliResourcesVersion": "2020-03-31",
+  "profiles": {
+    "default": {
+      "skillMetadata": {
+        "src": "./skill-package"
+      },
+      "code": {
+        "default": {
+          "src": "./lambda"
         },
-        "code": {
-          "default": {
-            "src": "./code",
-            "lastDeployHash": ""
-          },
-          "EU": {
-            "src": "./code",
-            "lastDeployHash": ""
-          }
-        },
-        "skillInfrastructure": {
-          "userConfig": {
-            "runtime": "java8",
-            "handler": "com.amazon.ask.highlow.HighLowGameStreamHandler"
-          }
+        "EU": {
+          "src": "./lambda"
         }
+      },
+      "skillInfrastructure": {
+        "userConfig": {
+          "runtime": "java8",
+          "handler": "com.amazon.ask.highlow.HighLowGameStreamHandler",
+          "templatePath": "./infrastructure/cfn-deployer/skill-stack.yaml",
+          "awsRegion": "us-east-1"
+        },
+        "type": "@ask-cli/cfn-deployer"
       }
     }
   }
-  
+}
