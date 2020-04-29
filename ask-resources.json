@@ -12,8 +12,8 @@
       },
       "skillInfrastructure": {
         "userConfig": {
-          "runtime": "nodejs10.x",
-          "handler": "index.handler",
+          "runtime": "java11",
+          "handler": "example.Hello::handleRequest",
           "awsRegion": "us-east-1"
         },
         "type": "@ask-cli/lambda-deployer"
